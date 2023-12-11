@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+form {
+    margin: 50px 800px 0px 800px;
+    text-align: center;
+    border: 2px solid rgb(0, 110, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+    font-family: 'Montserrat';
+    padding: 20px;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+  
+input:focus:invalid {
+    box-shadow: none;
+}

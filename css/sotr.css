@@ -196,6 +196,12 @@ footer {
     margin-top: 20px;
 }
 
+.zapis {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .bt {
     border: 2px solid #164384;
     border-radius: 10px;

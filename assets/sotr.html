@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зенит | Личный кабинет</title>
+    <link rel="icon" type="image/png" size="512x512" href="../img/icon-round.png">
+    <link rel="stylesheet" href="../css/sotr.css">
+    <script src="https://unpkg.com/@vkid/sdk@latest/dist-sdk/umd/index.js"></script>
+    <script src="../scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img class="name" src="../img/ZEnit.png" alt="Иконка" href="../index.html"></a>
+        <nav class="navigation">
+            <a class="a" href="#grafik">Запись</a>
+            <a class="a" href="#ustav">Устав</a>
+            <a class="a" href="#talk">Беседы</a>
+            <a class="a" href="../index.html">Расписание</a>
+        </nav>
+    </header>
+    <main>
+        <section class="lk">
+            <div class="lk_name">
+                <h2 class="lk_name-text">
+                    Добро пожаловать в личный кабинет &#128075;
+                </h2>
+            </div>
+            <div class="info" id="info">
+                <h3 id="fname" class="fname">
+                    Пока нет информации о тебе &#129300;
+                </h3>
+                <h3 id="rank" class="rank">
+                    Информации о ранге нет :(
+                </h3>
+            </div>
+        </section>
+        <section>
+            <div class="ut_name">
+                <h2 class="lk_name-text">
+                    Запись &#128214;
+                </h2>
+            </div>
+            <div class="info">
+                <div id="disactive">
+                    <h3 class="text">
+                        Упс... У тебя нету доступа к этому &#128164;
+                    </h3>
+                </div>
+                <div class="disabled" id="grafik">
+                    <div class="text">
+                        <h3>
+                            Здесь ты можешь записаться на график. Вводи данные в формате: Маршрут/Время/Ник
+                        </h3>
+                    </div>
+                    <form class="rec" name="submit-to-google-sheet">
+                        <input name="МТ" class="mt" id="mt" placeholder="11" required autocomplete="off" maxlength="3">
+                        <input name="Время выхода" class="time" id="time" type="time" placeholder="14:20" required autocomplete="off">
+                        <input name="Никнейм" class="nickname" id="nickname" type="text" placeholder="Ivan Ivanov" required autocomplete="off">
+                        <button class="bt" type="submit">Записаться</button>
+                    </form>
+                    <div class="success">
+                        <h3 class="succes-text">
+                            
+                        </h3>
+                        <h3 class="error-text">
+
+                        </h3>
+                    </div>
+                    <div class="text-2">
+                        <h3>
+                            Вылетело? Не успел? Для отмены отправь запись на маршрут еще раз с указанием "[Ник], ОТМЕНА" в поле "Никнейм"
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ustav" id="ustav">
+            <div class="ut_name">
+                <h2 class="lk_name-text">
+                    Устав &#128214;
+                </h2>
+            </div>
+            <div class="info">
+                <form action="https://vk.com/@zenit_s1-ustav-chatp-ooo-zenit">
+                    <button class="buy">Кликни на меня</button>
+                </form>
+            </div>
+        </section>
+        <section class="talk" id="talk">
+            <div class="ut_name">
+                <h2 class="lk_name-text">
+                    Беседы &#128172;
+                </h2>
+            </div>
+            <div class="info">
+                <div id="disactive">
+                    <h3>
+                        Упс... У тебя нету доступа к этому &#128164;
+                    </h3>
+                </div>
+                <div class="disabled" id="grafik">
+                    <a href="https://vk.me/join/6bT3eHim0LS5FyFqAA7E6Y9OcOZhfzDtKqg=">Флудилка</a>
+                    <a href="https://vk.me/join/OcUDsVTDX1xOhls01iUV7Hfs9Te354qzf5g=">Доска объявлений</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="VKIDSDKAuthButton" class="VkIdWebSdk__button VkIdWebSdk__button_reset">
+            <div class="VkIdWebSdk__button_container">
+              <div class="VkIdWebSdk__button_icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.54648 4.54648C3 6.09295 3 8.58197 3 13.56V14.44C3 19.418 3 21.907 4.54648 23.4535C6.09295 25 8.58197 25 13.56 25H14.44C19.418 25 21.907 25 23.4535 23.4535C25 21.907 25
+                    19.418 25 14.44V13.56C25 8.58197 25 6.09295 23.4535 4.54648C21.907 3 19.418 3 14.44 3H13.56C8.58197 3 6.09295 3 4.54648 4.54648ZM6.79999 10.15C6.91798 15.8728 9.92951 19.31 14.8932 19.31H15.1812V16.05C16.989 16.2332 18.3371 
+                    17.5682 18.8875 19.31H21.4939C20.7869 16.7044 18.9535 15.2604 17.8141 14.71C18.9526 14.0293 20.5641 12.3893 20.9436 10.15H18.5722C18.0747 11.971 16.5945 13.6233 15.1803 13.78V10.15H12.7711V16.5C11.305 16.1337 9.39237 14.3538 9.314 10.15H6.79999Z" fill="white"/>
+                    </svg>
+              </div>
+              <div class="VkIdWebSdk__button_text">
+                    Вход VK ID
+              </div>
+            </div>
+        </button>
+    </footer>
+    <script src="../scripts/auth.js" defer></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzopn8kCPq3rFSh9F7FgqzqqYPCPmS8UvDmu3-_wGB5AcoHyyOrYBYm8Hl5ht9NIsxE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        let successNode = document.querySelector(`.succes-text`)
+        let timeInput = document.querySelector(`.time`)
+        let mtInput = document.querySelector(`.mt`)
+        let errorNode = document.querySelector('.error-text')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => successNode.innerHTML = `Вы успешно записаны`, timeInput.value = ``, mtInput.value = ``)
+            .catch(error => errorNode.innerHTML = 'Хм... Не смог Вас записать. Повторите попытку!')
+        })
+      </script>
+</body>
+</html>

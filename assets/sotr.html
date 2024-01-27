@@ -48,15 +48,18 @@
                     </h3>
                 </div>
                 <div class="disabled" id="grafik">
-                    <div class="text">
-                        <h3>
-                            Здесь ты можешь записаться на график. Вводи данные в формате: Маршрут/Время/Ник
-                        </h3>
+                    <div class="zapis">
+                        <div class="text">
+                            <h3>
+                                Здесь ты можешь записаться на график. Вводи данные в формате: Маршрут/Время/Ник
+                            </h3>
+                        </div>
                     </div>
                     <form class="rec" name="submit-to-google-sheet">
                         <input name="МТ" class="mt" id="mt" placeholder="11" required autocomplete="off" maxlength="3">
                         <input name="Время выхода" class="time" id="time" type="time" placeholder="14:20" required autocomplete="off">
                         <input name="Никнейм" class="nickname" id="nickname" type="text" placeholder="Ivan Ivanov" required autocomplete="off">
+                        <input name="Дата" class="date" id="nickname" type="date" placeholder="01.01.2024" required autocomplete="off">
                         <button class="bt" type="submit">Записаться</button>
                     </form>
                     <div class="success">
@@ -67,10 +70,12 @@
 
                         </h3>
                     </div>
-                    <div class="text-2">
-                        <h3>
-                            Вылетело? Не успел? Для отмены отправь запись на маршрут еще раз с указанием "[Ник], ОТМЕНА" в поле "Никнейм"
-                        </h3>
+                    <div class="zapis">
+                        <div class="text-2">
+                            <h3>
+                                Вылетело? Не успел? Для отмены отправь запись на маршрут еще раз с указанием "[Ник], ОТМЕНА" в поле "Никнейм"
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
